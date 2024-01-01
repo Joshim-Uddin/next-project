@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar"
 import Hero from "../Components/Hero"
 import Partners from "../Components/Partners"
 import Characterstic from "../Components/Characterstic"
+import Testimonial from "../Components/Testimonial"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     <Hero />
     <Characterstic />
     <Partners />
+    <Testimonial />
    </main>
   )
 }
