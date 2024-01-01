@@ -3,6 +3,7 @@ import Hero from "../Components/Hero"
 import Partners from "../Components/Partners"
 import Characterstic from "../Components/Characterstic"
 import Testimonial from "../Components/Testimonial"
+import Footer from "../Components/Footer"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <Characterstic />
     <Partners />
     <Testimonial />
+    <Footer />
    </main>
   )
 }

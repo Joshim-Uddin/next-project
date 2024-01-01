@@ -6,7 +6,7 @@ const Testimonial = () => {
         <div className='bg-slate-20 md:py-16 py-5'>
             <h3 className='md:text-4xl text-2xl text-center text-black font-semibold'>What Our Client Says</h3>
             <hr className='md:border-4 border-2 border-[#FEC400] md:w-80 w-48 mx-auto mt-2'/>
-            <div className='flex md:flex-row flex-col md:gap-8 gap-5 justify-center items-center md:w-4/5 px-2 mx-auto text-black mt-8'>
+            <div className='flex md:flex-row flex-col md:gap-8 gap-5 justify-center items-center md:w-4/5 px-2 mx-auto text-black md:mt-12 mt-8'>
                 <div className='bg-white p-3 shadow-md min-w-72 rounded-lg flex flex-col gap-8'>
                     <p className='italic'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quis quae pariatur doloremque sed praesentium voluptate consectetur facere!</p>
                     <div className='flex justify-center items-center gap-5'>
