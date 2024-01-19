@@ -7,7 +7,9 @@ const nextConfig = {
             hostname: 'i.ibb.co',
             port: '',
           },
+          
         ],
+        
       },
 }
 

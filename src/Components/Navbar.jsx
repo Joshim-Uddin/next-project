@@ -7,7 +7,7 @@ const Navbar = () => {
     const [clicked , setClicked] = useState(false)
     console.log(clicked)
     return (
-        <nav className={clicked?'flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 mb-36':'flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 '}>
+        <nav className={clicked?'flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 mb-36 text-white':'text-white flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 '}>
             <h3 className='md:text-3xl text-xl font-semibold text-white'><Link href='/'>Next <span className='text-violet-400 font-bold'>Project</span></Link></h3>
             <div>
                 <div className="min-[600px]:hidden min-[600px]:mr-4" onClick={()=>setClicked(!clicked)}>
@@ -18,6 +18,7 @@ const Navbar = () => {
                 <li className='max-[600px]:'><a href="/products">Products</a></li>
                 <li className='max-[600px]:'><a href="/about">About</a></li>
                 <li className='max-[600px]:'><a href="/contact">Contact</a></li>
+                <li className='max-[600px]:'><a href="/login">Login</a></li>
             </ul>
             </div>
         </nav>
