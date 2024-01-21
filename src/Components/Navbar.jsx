@@ -5,7 +5,6 @@ import { FaBarsStaggered } from "react-icons/fa6";
 
 const Navbar = () => {
     const [clicked , setClicked] = useState(false)
-    console.log(clicked)
     return (
         <nav className={clicked?'flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 mb-36 text-white':'text-white flex justify-between items-center py-5 bg-amber-400 md:px-16 px-5 '}>
             <h3 className='md:text-3xl text-xl font-semibold text-white'><Link href='/'>Next <span className='text-violet-400 font-bold'>Project</span></Link></h3>

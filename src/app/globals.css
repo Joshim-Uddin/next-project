@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn:hover{
+  box-shadow: 1px 5px #C2410C;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

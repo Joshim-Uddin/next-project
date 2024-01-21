@@ -5,11 +5,12 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 const auth = getAuth(app)
 export const AuthContext = createContext(null)
-const googlProvider = new GoogleAuthProvider(auth)
+const googleProvider = new GoogleAuthProvider()
 const AuthProvider = ({children}) => {
 
-    const googleSignIn = ()=>{
-        return signInWithPopup(auth, googlProvider)
+    const googleLogIn = ()=>{
+        console.log('clicked')
+        return signInWithPopup(auth, googleProvider)
     }
     const signIn = (email, password)=>{
         return signInWithEmailAndPassword(auth, email, password)
@@ -17,7 +18,7 @@ const AuthProvider = ({children}) => {
     const signUp = (email, password)=>{
         return createUserWithEmailAndPassword(auth, email, password)
     }
-    const authInfo = {googleSignIn, signIn, signUp}
+    const authInfo = {googleLogIn, signIn, signUp, user:'name'}
 
     return (
         <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
